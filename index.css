@@ -1,0 +1,223 @@
+/*CSS RESET RULE*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F2E9EB; /* Light pastel pinkish background */
+    color: #31383F; /* Dark grayish-blue text */
+}
+
+/* Navbar Custom Styles */
+.navbar {
+    background-color: #DD8EA4;
+    border-bottom: 2px solid #DD8EA4; /* Rose pink border for navbar */
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #31383F; /* Dark text for brand name */
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar-brand:hover {
+    color: #FEDD89 !important; /* Warm golden yellow button */
+}
+
+/* Hero Section (Home) */
+#home {
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+}
+
+#home .home-btn {
+    background-color: #FEDD89; /* Warm golden yellow button */
+    color: #31383F; /* Dark text for button */
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#home h1,
+#home p {
+    color: #DD8EA4 !important;
+}
+
+/* Categories Section */
+#categories-section {
+    padding: 60px 0;
+    background-color: #F2E9EB; /* Soft pastel pink background */
+}
+
+#categories-section .card {
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#categories-section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #DD8EA4; /* Rose pink for card titles */
+    transition: color 0.3s ease;
+}
+
+.card-title:hover {
+    color: #FEDD89; /* Golden yellow for hover effect */
+}
+
+.card-body .btn-primary {
+    background-color: #FEDD89; /* Golden yellow for button */
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.card-body .btn-primary:hover {
+    background-color: #F2E9EB; /* Light pink background on hover */
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    background: linear-gradient(to right, #F2E9EB, #F7F7F7); /* Light pastel gradient */
+    text-align: center;
+}
+
+#about h2 {
+    color: #31383F; /* Dark text for heading */
+}
+
+#about .lead {
+    color: #31383F; /* Dark text for description */
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #DD8EA4; /* Rose pink background for contact */
+    color: white;
+}
+
+#contact h2 {
+    color: #FEDD89; /* Golden yellow heading */
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#contact .text-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+#contact .form-group label {
+    font-size: 1rem;
+    color: #ffffff; /* White text for labels */
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+    background-color: #ffffff; /* White background for inputs */
+    color: #31383F;
+    border: 1px solid #DD8EA4; /* Rose pink border for inputs */
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#contact .form-group input:focus,
+#contact .form-group textarea:focus {
+    border-color: #FEDD89; /* Golden yellow border on focus */
+    outline: none;
+}
+
+#contact button[type="submit"] {
+    background-color: #FEDD89; /* Golden yellow button */
+    border: none;
+    color: #31383F; /* Dark text for button */
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #DD8EA4; /* Rose pink on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #31383F; /* Dark grayish-blue footer background */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .social-icons a {
+    color: #FEDD89; /* Golden yellow icons */
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #DD8EA4; /* Rose pink on hover */
+}
+
+footer p {
+    color: #fff; /* White text for footer */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #contact .text-warning {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .card-body .btn-primary {
+        font-size: 1rem;
+    }
+}
